@@ -51,7 +51,7 @@ def create_rfm_df(df):
     
     return rfm_df
 
-all_data_df = pd.read_csv("/mount/src/ecommerce_analysis_data/dashboard/dashboard.py")
+all_data_df = pd.read_csv("./dashboard/all_data.csv")
 
 datetime_columns = ["order_purchase_timestamp", "order_delivered_customer_date"]
 all_data_df.sort_values(by="order_purchase_timestamp", inplace=True)
